@@ -1,0 +1,37 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Local="clr-namespace:lab3"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="lab3.MainWindow"
+        x:DataType="Local:MainWindow"
+        Title="lab3" Height="400" Width="590">
+    <Border BorderBrush="White" BorderThickness="2">
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel>
+                    <Border BorderBrush="White" BorderThickness="1" Margin="15">
+                        <DataGrid Name="Grid" Height="300" Width="400" IsReadOnly="True" SelectedItem="" GridLinesVisibility="All" ItemsSource="{Binding Employees}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID" Binding="{Binding Id}"/>
+                                <DataGridTextColumn Header="Imię" Binding="{Binding Name}"/>
+                                <DataGridTextColumn Header="Nazwisko" Binding="{Binding Surname}"/>
+                                <DataGridTextColumn Header="Wiek" Binding="{Binding Age}"/>
+                                <DataGridTextColumn Header="Stanowisko" Binding="{Binding Position}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Click="saveCSV" Content="Zapisz do .csv" Margin="15,1,15,15" Height="50" Width="200" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                        <Button Click="loadCSV" Content="Odczyt z .csv" Margin="15,1,15,15" Height="50" Width="200" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                    <Button Click="addEm" Content="DODAJ" Margin="5,15,15,15" Height="50" Width="100" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Button Click="delEm" Content="USUŃ" Margin="5,15,15,15" Height="50" Width="100" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</Window>
