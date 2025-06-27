@@ -1432,11 +1432,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/comus/RiderProjects/BioVisual/lab3/lab3/lab3.csproj",
+      "projectUniqueName": "/home/comus/RiderProjects/BioVisual/lab3-json/lab3/lab3.csproj",
       "projectName": "lab3",
-      "projectPath": "/home/comus/RiderProjects/BioVisual/lab3/lab3/lab3.csproj",
+      "projectPath": "/home/comus/RiderProjects/BioVisual/lab3-json/lab3/lab3.csproj",
       "packagesPath": "/home/comus/.nuget/packages/",
-      "outputPath": "/home/comus/RiderProjects/BioVisual/lab3/lab3/obj/",
+      "outputPath": "/home/comus/RiderProjects/BioVisual/lab3-json/lab3/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/comus/.nuget/NuGet/NuGet.Config"

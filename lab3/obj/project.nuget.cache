@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vSG//e0hz/g=",
+  "dgSpecHash": "kLQeufbMfvc=",
   "success": true,
-  "projectFilePath": "/home/comus/RiderProjects/BioVisual/lab3/lab3/lab3.csproj",
+  "projectFilePath": "/home/comus/RiderProjects/BioVisual/lab3-json/lab3/lab3.csproj",
   "expectedPackageFiles": [
     "/home/comus/.nuget/packages/avalonia/11.2.1/avalonia.11.2.1.nupkg.sha512",
     "/home/comus/.nuget/packages/avalonia.angle.windows.natives/2.1.22045.20230930/avalonia.angle.windows.natives.2.1.22045.20230930.nupkg.sha512",

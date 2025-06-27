@@ -70,4 +70,27 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             }
         }
     }
+    private async void saveJSON(object sender, RoutedEventArgs e) {
+        var saveFileDialog = new SaveFileDialog();
+        var result = await saveFileDialog.ShowAsync(this);
+        if (result != null) {
+            using (var stream = new StreamWriter(result)) {
+                await stream.WriteLineAsync($"{{\n" +
+                                            $"  \"employees\": {{");
+                foreach (var em in Employees)
+                {
+                    await stream.WriteLineAsync($"      \"employee\": {{\n" +
+                                                $"          \"id\": \"{em.Id}\",\n" +
+                                                $"          \"name\": \"{em.Name}\",\n" +
+                                                $"          \"surname\": \"{em.Surname}\",\n" +
+                                                $"          \"age\": \"{em.Age}\",\n" +
+                                                $"          \"position\": \"{em.Position}\"\n");
+                    if(em.Id < Employees.Count) await stream.WriteLineAsync("      },");
+                    else await stream.WriteLineAsync("      }");
+                }
+                await stream.WriteLineAsync($"  }}\n" +
+                                            $"}}\n");
+            }
+        }
+    }
 }

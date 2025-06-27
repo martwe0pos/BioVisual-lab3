@@ -23,6 +23,7 @@
                         </DataGrid>
                     </Border>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Click="saveJSON" Content="Zapisz do .json" Margin="15,1,15,15" Height="50" Width="200" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                         <Button Click="saveCSV" Content="Zapisz do .csv" Margin="15,1,15,15" Height="50" Width="200" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                         <Button Click="loadCSV" Content="Odczyt z .csv" Margin="15,1,15,15" Height="50" Width="200" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                     </StackPanel>
