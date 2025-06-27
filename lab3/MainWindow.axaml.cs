@@ -70,4 +70,23 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             }
         }
     }
+    private async void saveXML(object sender, RoutedEventArgs e) {
+        var saveFileDialog = new SaveFileDialog();
+        var result = await saveFileDialog.ShowAsync(this);
+        if (result != null) {
+            using (var stream = new StreamWriter(result)) {
+                await stream.WriteLineAsync($"<employees>\n");
+                foreach (var em in Employees) { 
+                    await stream.WriteLineAsync($"  <employee>\n" +
+                                                $"      <id>{em.Id}</id>\n" +
+                                                $"      <name>{em.Name}</name>\n" +
+                                                $"      <surname>{em.Surname}</surname>\n" +
+                                                $"      <age>{em.Age}</age>\n" +
+                                                $"      <position>{em.Position}</position>\n" +
+                                                $"  </employee>\n");
+                }
+                await stream.WriteLineAsync($"</employees>\n");
+            }
+        }
+    }
 }

@@ -15,17 +15,17 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = lab3
-build_property.ProjectDir = /home/comus/RiderProjects/BioVisual/lab3/lab3/
+build_property.ProjectDir = /home/comus/RiderProjects/BioVisual/lab3-xml/lab3/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[/home/comus/RiderProjects/BioVisual/lab3/lab3/App.axaml]
+[/home/comus/RiderProjects/BioVisual/lab3-xml/lab3/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/comus/RiderProjects/BioVisual/lab3/lab3/dodaj.axaml]
+[/home/comus/RiderProjects/BioVisual/lab3-xml/lab3/dodaj.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/comus/RiderProjects/BioVisual/lab3/lab3/MainWindow.axaml]
+[/home/comus/RiderProjects/BioVisual/lab3-xml/lab3/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
